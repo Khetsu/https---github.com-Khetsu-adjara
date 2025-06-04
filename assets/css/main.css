@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "./variables.css";
+
+@font-face {
+  font-family: "TWS AjaraTV Mt";
+  src: url("/public/fonts/TWSAjaraTVMt-Bold.woff") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
