@@ -1,12 +1,3 @@
-
-
 <template>
-    <HomeGrid />
-    <News />
-    <BroadcastsSection />
-    <AdditionalNews />
-    <VideoList />
-    <InterestingTopic />
-    <FooterAdjara />
-
+    <NuxtPage />
 </template>

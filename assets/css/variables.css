@@ -1,6 +1,7 @@
 @theme {
-  --font-gpb-square: "BPG Square Mtavruli";
+  --font-adjara-mt: "TWS AjaraTV Mt";
+  --font-adjara-nu: "TWS AjaraTV Nu";
   --color-primary: red;
-  --color-tahiti: #3ab7bf;
-  --color-bermuda: #78dcca;
+  --color-adjara-gray: #808080;
+  --color-adjara-yellow: #FFC038;
 }
