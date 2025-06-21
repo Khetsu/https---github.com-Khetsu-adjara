@@ -1,6 +1,5 @@
 <template>
     <div>
-        <HomeGrid />
         <!-- class="bg-red-900" -->
         <TitledSection title="უახლესი" :permalink="{ url: '#', title: 'ყველას ნახვა' }">
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-[42.5px]">
@@ -22,7 +21,6 @@
         </TitledSection>
         <TitledSection title="დამატებითი სიახლეები">
             <div class="grid grid-cols-7 gap-10">
-                <!-- Left -->
                 <div
                     class="flex flex-col justify-between font-ajaratv text-black text-[14px] tracking-[0.28px] col-span-2">
                     <template v-for="i in 4" :key="i">
@@ -61,12 +59,58 @@
                             date="24 მარ 2025" />
                     </template>
                 </div>
+            </div>
 
+        </TitledSection>
+
+        <TitledSection title="საინტერესო თემები" :permalink="{ url: '# ', title: 'ყველას ნახვა' }" :has-arrow="true">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-[42.5px]">
+                <template v-for="i in 5" :key="i">
+                    <ItemsNews :thumbnail="`https://picsum.photos/id/${i * 160}/200/300`"
+                        title="რეგიონული განვითარების მინისტრის მოადგილეებად ლევან ზაუტაშვილი და ზაზა კვიციანი დაინიშნენ"
+                        desc="მძიმე დანაშაული, როდესაც უცნობმა პირებმა გაძარცვეს ადგილობრივი მაღაზია..."
+                        date="24 მარ 2025" />
+                </template>
             </div>
         </TitledSection>
-        <!-- <AdditionalNews />
-        <VideoList />
-        <InterestingTopic />
-        <FooterAdjara /> -->
+
+        <VideoList :videos="newsData" title="ვიდეოები" :more="{ link: '#', title: 'ყველას ნახვა' }" />
     </div>
 </template>
+
+<script setup>
+definePageMeta({ layout: 'home' })
+
+const newsData = [
+    {
+        title: "დაბა სტეფანწმინდაში მომხდარ მკვლელობის ფაქტთან",
+        category: "რეგიონები",
+        image: `https://picsum.photos/id/100/200/300`,
+        link: "#",
+        date: "24 მარტი 1992"
+    },
+    {
+        title: "დაბა სტეფანწმინდაში მომხდარ მკვლელობის ფაქტთან დაკავშირებით ორი პირი დააკავეს დაკავშირებით ",
+        category: "პოლიტიკა",
+        image: `https://picsum.photos/id/200/200/300`,
+        link: "#",
+        date: "24 მარტი 2020"
+    },
+    {
+        title: "დააკავეს დაბა სტეფანწმინდაში მომხდარ მკვლელობის ფაქტთან დაკავშირებით ორი პირი დააკავეს დაბა სტეფანწმინდაში მომხდარ მკვლელობის ფაქტთან დაკავშირებით ორი პირი დააკავეს",
+        category: "სპორტი",
+        image: `https://picsum.photos/id/110/200/300`,
+        link: "#",
+        date: "24 აგვისტო 2025"
+    },
+    {
+        title: "დაბა სტეფანწმინდაში მომხდარ მკვლელობის ფაქტთან დაკავშირებით ორი პირი დააკავეს დაკავშირებით ორი პირი დააკავეს დაბა სტეფანწმინდაში მომხდარ მკვლელობის ფაქტთან დაკავშირებით ორი პირი დააკავეს დაბა სტეფანწმინდაში მომხდარ მკვლელობის ფაქტთან დაკავშირებით ორი პირი დააკავეს",
+        category: "ტექნოლოგია",
+        image: `https://picsum.photos/id/130/200/300`,
+        link: "#",
+        date: "24 მარტი 2024"
+    },
+];
+
+</script>

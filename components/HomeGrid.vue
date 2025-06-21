@@ -1,7 +1,7 @@
 <template>
  
   <div class="w-full h-[209px] bg-[#00345B] py-[32px] flex justify-center">
-    <div class="grid grid-cols-8 gap-[16px] max-w-[1220px] w-full ">
+    <div class="grid grid-cols-8 gap-[16px] adjara-container w-full ">
 
      
       <div class="flex flex-col font-adjara items-center justify-center gap-[20px] p-[8px] bg-[#03446D] rounded-[6px text-[#FFFFFF] text-[14px]  tracking-[0.28px] hover:bg-blue-950 transition-all duraction-300">

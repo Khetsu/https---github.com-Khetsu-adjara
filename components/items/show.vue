@@ -1,4 +1,5 @@
 <template>
+    <div class="">
   <a :href="permalink" class="w-full flex flex-col justify-center items-start gap-[24px] ">
     <img 
       :src="thumbnail"
@@ -8,6 +9,7 @@
       <p class="text-[14px] text-[#808080]">{{ desc }}</p>
     </div>
   </a>
+  </div>
 </template>
 <script setup lang="ts">
 defineProps({

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#F7F7F7] w-full py-[64px] px-4 lg:px-0">
-    <div class="bg-[#F7F7F7] max-w-[1220px] w-full mx-auto py-[48px]">
+    <div class="bg-[#F7F7F7] adjara-container w-full mx-auto py-[48px]">
 
       <div class="flex justify-between items-center mb-8">
         <div class="flex gap-3">
@@ -26,7 +26,7 @@
           </template>
         </div>
       </div>
-      <slot />
+      <slot/>
 
     </div>
   </div>
@@ -41,6 +41,7 @@ interface TitledSection {
   permalink: BunttonPermalink
   hasArrow: boolean
   title: boolean | string
+  list: string
 }
 
 defineProps<TitledSection>()
